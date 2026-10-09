@@ -1,8 +1,6 @@
 package com.example.pertemuan4
 
-import android.graphics.Paint
-import android.widget.Space
-import androidx.activity.result.contract.ActivityResultContract
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -20,7 +18,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.blur
+
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -31,12 +29,12 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun AktivitasPertama(modifier: Modifier) {
+fun AktivitasPertama(modifier: Modifier = Modifier) {
     Column(
-        modifier = Modifier.padding(top = 100.dp)
+        modifier = modifier
+            .padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-
     ) {
 
         Text(
