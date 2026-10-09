@@ -1,5 +1,6 @@
 package com.example.pertemuan4
 
+import android.widget.Space
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -10,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
@@ -56,6 +58,8 @@ fun AktivitasPertama(modifier: Modifier) {
                     contentDescription = null,
                     modifier = Modifier.size(100.dp).padding(5.dp)
                 )
+                Spacer(modifier = Modifier.width(30.dp))
+
             }
         }
     }
